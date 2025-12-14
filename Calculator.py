@@ -1,29 +1,30 @@
-print('\t\nДобро пожаловать в простой калькукулятор.')
-print("""\t\nДоступные операции:
-·Сложение (+)
-·Вычетание (-)
-·Умножение (*)
-·Деление (/)
+print('\t\nWelcome to the Simple Calculator.')
+print("""\t\nAvailable operations:
+·Addition (+)
+·Subtraction (-)
+·Multiplication (*)
+·Division (/)
 """)
 
-num_1 = float(input('\nВведите первое число:'))
-operator = input('Введите оператор (+, -, *, /):')
-num_2 = float(input('Введите второе число:'))
+num_1 = float(input('\nEnter the first number: '))
+operator = input('Enter the operator (+, -, *, /): ')
+num_2 = float(input('Enter the second number: '))
 
 if operator == "+":
     result = num_1 + num_2
-    print(f"{num_1} {operator} {num_2} = {result}" )
+    print(f"{num_1} {operator} {num_2} = {result}")
 
 elif operator == "-":
     result = num_1 - num_2
-    print(f"{num_1} {operator} {num_2} = {result}" )
+    print(f"{num_1} {operator} {num_2} = {result}")
 
 elif operator == "*":
     result = num_1 * num_2
-    print(f"{num_1} {operator} {num_2} = {result}" )
+    print(f"{num_1} {operator} {num_2} = {result}")
     
 elif operator == "/":
     result = num_1 / num_2
-    print(f"{num_1} {operator} {num_2} = {result}" )
+    print(f"{num_1} {operator} {num_2} = {result}")
+    
 else:
-    print("Ошибка!")
+    print("Error: Invalid operator!")
